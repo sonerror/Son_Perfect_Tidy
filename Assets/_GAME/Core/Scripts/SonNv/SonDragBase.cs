@@ -24,7 +24,7 @@ namespace sonnv
         [SerializeField] protected Transform tfRotate;
 
         [Header("Sprites")]
-        [SerializeField] private SpriteRenderer[] sprites = System.Array.Empty<SpriteRenderer>();
+        private SpriteRenderer[] sprites = new SpriteRenderer[0];
         [SerializeField] private SpriteRenderer sprIng;
 
         /// <summary>Primary renderer — renderer đầu tiên trong mảng sprites.</summary>

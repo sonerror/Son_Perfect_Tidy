@@ -1,10 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(RectTransform))]
 public class UIUnit : MonoBehaviour
 {
-    private RectTransform rectTf;
-    public RectTransform RectTf => rectTf ? rectTf : rectTf = GetComponent<RectTransform>();
-
+    private RectTransform _rectTf;
+    public RectTransform RectTf
+    {
+        get
+        {
+            if (_rectTf == null) _rectTf = GetComponent<RectTransform>();
+            return _rectTf;
+        }
+    }
 }

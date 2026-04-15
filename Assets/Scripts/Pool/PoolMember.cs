@@ -1,13 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PoolMember : GameUnit
+public abstract class PoolMember : MonoBehaviour
 {
-    private PoolType poolType;
-    public PoolType PoolType
+    public Transform Tf { get; private set; }
+
+    // Thêm dòng này: Để lưu lại gốc gác của Object
+    public PoolMember OriginalPrefab { get; set; }
+
+    protected virtual void Awake()
     {
-        get => poolType;
-        private set => poolType = value;
+        Tf = transform;
     }
+
+    public virtual void OnSpawn() { }
+    public virtual void OnDespawn() { }
 }

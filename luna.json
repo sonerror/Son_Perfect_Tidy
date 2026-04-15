@@ -1,8 +1,8 @@
 {
     "version": "7.1.0",
     "projectId": "f42e7ff96e4545544bb6cd68f51ab634",
-    "applicationID": 27404,
-    "creativeName": "R1_Cookingdom_v6_Rolled_Ice_Cream_GG",
+    "applicationID": 26861,
+    "creativeName": "Son_R1_PerfectTidy_PLY122_GG",
     "pgServer": "EU",
     "window": {
         "‐⁙": true
@@ -133,10 +133,11 @@
             ]
         },
         "scenes": [
-            "Assets/_GAME/Levels/LevelCream/LevelCream.unity"
+            "Assets/_GAME/Playable/SonLevel/LevelTidyPLY122/Level122.unity"
         ],
         "disabledScenes": [
             "Assets/Scenes/GamePlayScene.unity",
+            "Assets/_GAME/Levels/LevelCream/LevelCream.unity",
             "Assets/_GAME/Levels/LevelMacaron/LevelMacaron.unity",
             "Assets/_GAME/Levels/LevelShirm/LevelShirm.unity",
             "Assets/_GAME/Levels/LevelSkewers/LevelSkewers.unity",
@@ -1910,10 +1911,6 @@
                 "excluded": true
             },
             {
-                "name": "System.Collections.Generic.KeyNotFoundException",
-                "excluded": true
-            },
-            {
                 "name": "System.CharEnumerator",
                 "excluded": true
             },
@@ -3283,10 +3280,6 @@
             },
             {
                 "name": "UnityEngine.PropertyName",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.RangeAttribute",
                 "excluded": true
             },
             {
@@ -8410,10 +8403,6 @@
                 "excluded": true
             },
             {
-                "name": "AnhPD.Cook.ClickableButton",
-                "excluded": true
-            },
-            {
                 "name": "AnhPD.Cook.DirtCleanInSink",
                 "excluded": true
             },
@@ -8751,10 +8740,6 @@
             },
             {
                 "name": "Progress",
-                "excluded": true
-            },
-            {
-                "name": "PoolManager.PoolAmount",
                 "excluded": true
             },
             {
@@ -9788,6 +9773,14 @@
             {
                 "name": "ArrowTutorialAnim",
                 "excluded": true
+            },
+            {
+                "name": "sonnv.SonDragBase",
+                "excluded": true
+            },
+            {
+                "name": "sonnv.IngredientList",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -13725,7 +13718,7 @@
                     },
                     {
                         "name": "$ctor2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -13741,11 +13734,11 @@
                     },
                     {
                         "name": "Clear",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Enqueue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEnumerator",
@@ -13761,7 +13754,7 @@
                     },
                     {
                         "name": "Dequeue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Peek",
@@ -13781,11 +13774,11 @@
                     },
                     {
                         "name": "SetCapacity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MoveNext",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TrimExcess",
@@ -22208,22 +22201,6 @@
                     {
                         "name": "showEndGame",
                         "excluded": false
-                    },
-                    {
-                        "name": "ChangeState",
-                        "excluded": false
-                    },
-                    {
-                        "name": "PlaySoundWater",
-                        "excluded": false
-                    },
-                    {
-                        "name": "IE_ChangeState",
-                        "excluded": false
-                    },
-                    {
-                        "name": "PlaySoundDrop",
-                        "excluded": true
                     }
                 ]
             },
@@ -22244,12 +22221,8 @@
                         "excluded": false
                     },
                     {
-                        "name": "OnInit",
-                        "excluded": false
-                    },
-                    {
                         "name": "Spawn$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Spawn",
@@ -22260,7 +22233,35 @@
                         "excluded": true
                     },
                     {
-                        "name": "GetPrefab",
+                        "name": "Init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Spawn$4",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Spawn$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Spawn$3",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DespawnDelayed",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CreateInstance",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CreateParent",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DespawnRoutine",
                         "excluded": true
                     }
                 ]
@@ -22594,20 +22595,8 @@
                         "excluded": false
                     },
                     {
-                        "name": "IsLoaded",
-                        "excluded": false
-                    },
-                    {
-                        "name": "FixedUpdate",
-                        "excluded": false
-                    },
-                    {
-                        "name": "resizeAllUI",
-                        "excluded": false
-                    },
-                    {
                         "name": "Tf#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GameSize#get",
@@ -22620,6 +22609,22 @@
                     {
                         "name": "CloseUI",
                         "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckAndCalculateScreenSize",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResizeAllUI",
+                        "excluded": false
                     }
                 ]
             },
@@ -28291,7 +28296,7 @@
                     },
                     {
                         "name": "Init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTweensCapacity",
@@ -30070,43 +30075,11 @@
                         "excluded": false
                     },
                     {
-                        "name": "ListTfSpatula#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ListTfTargetSpatula#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "CountStep2",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SetIsSnapSpatula",
-                        "excluded": false
-                    },
-                    {
-                        "name": "TutorialStep5",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CountStep5",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SetIsSnapSpatulaStep6",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SetIsSnapBowlChoco",
-                        "excluded": false
-                    },
-                    {
                         "name": "ShowHintPosToPos",
                         "excluded": false
                     },
                     {
-                        "name": "TutorialStep7",
+                        "name": "TutorialStep1",
                         "excluded": false
                     }
                 ]
@@ -31560,10 +31533,6 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "gotoStore",
-                        "excluded": false
-                    },
-                    {
                         "name": "Resize",
                         "excluded": false
                     },
@@ -31573,6 +31542,10 @@
                     },
                     {
                         "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GotoStore",
                         "excluded": false
                     }
                 ]
@@ -34332,10 +34305,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "fomatSize",
-                        "excluded": false
-                    },
-                    {
                         "name": "Tf#get",
                         "excluded": true
                     },
@@ -34350,6 +34319,10 @@
                     {
                         "name": "OnHide",
                         "excluded": true
+                    },
+                    {
+                        "name": "FormatSize",
+                        "excluded": false
                     }
                 ]
             },
@@ -40038,11 +40011,15 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "PoolType#get",
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSpawn",
                         "excluded": true
                     },
                     {
-                        "name": "PoolType#set",
+                        "name": "OnDespawn",
                         "excluded": true
                     }
                 ]
@@ -41094,10 +41071,6 @@
                     {
                         "name": "OnPointerUp",
                         "excluded": false
-                    },
-                    {
-                        "name": "ShowEffect",
-                        "excluded": false
                     }
                 ]
             },
@@ -41734,28 +41707,6 @@
                 ]
             },
             {
-                "className": "Link.PlayVFX",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "IsPlaying#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "Play",
-                        "excluded": true
-                    },
-                    {
-                        "name": "PlayLoop",
-                        "excluded": true
-                    },
-                    {
-                        "name": "Stop",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
                 "className": "sonnv.ItemAlpha",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -42236,39 +42187,7 @@
                         "excluded": true
                     },
                     {
-                        "name": "OnDisable",
-                        "excluded": true
-                    },
-                    {
                         "name": "OnStartStep1",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep2",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep3",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep4",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep5",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep6",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep7",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep8",
                         "excluded": false
                     },
                     {
@@ -42280,10 +42199,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "SetStart",
-                        "excluded": true
-                    },
-                    {
                         "name": "StartDelayStep",
                         "excluded": false
                     },
@@ -42292,23 +42207,11 @@
                         "excluded": true
                     },
                     {
-                        "name": "CheckDoneStep8",
+                        "name": "ListSnapObjectRollDone#get",
                         "excluded": false
                     },
                     {
-                        "name": "OnStartStep9",
-                        "excluded": false
-                    },
-                    {
-                        "name": "HidePet",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnStartStep10",
-                        "excluded": false
-                    },
-                    {
-                        "name": "IEShowParticle",
+                        "name": "CheckDoneStep1",
                         "excluded": false
                     }
                 ]
@@ -42341,6 +42244,10 @@
                     },
                     {
                         "name": "Tick",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Tick\",this)}this.c$-=t;if(this.c$<=0){pc.Application.getApplication().events.off(\"update",
                         "excluded": false
                     }
                 ]
@@ -47654,6 +47561,384 @@
                         "excluded": false
                     }
                 ]
+            },
+            {
+                "className": "System.Collections.Generic.KeyNotFoundException",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor2",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "PoolManager.PoolConfig",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "getDefaultValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getHashCode",
+                        "excluded": true
+                    },
+                    {
+                        "name": "equals",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$clone",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "sonnv.SnapPointHint",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SpritesHint#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Show",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PlayBlueAnim",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopAnim",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSnap",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSetColorSnap",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ForceChangeSnap",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ChangeCanSnap",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetReferences",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "sonnv.SonDragSnap",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PrimarySprite#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SnapToPosition#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SnapPoint#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsDragging#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CanMoveBack#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsTrueStep#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Col#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnSnap#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTrans#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnMovebackDone#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFloatingStart",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetOnInit",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetSortingLayer",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerDown",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerUp",
+                        "excluded": false
+                    },
+                    {
+                        "name": "BeginDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartFailTimer",
+                        "excluded": true
+                    },
+                    {
+                        "name": "RestorePhysicsAfterDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateMousePos",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TrySnap",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ExecuteSnap",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HandleSnapFail",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsWithinSnapDistance",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HandleDrop",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnMoveBackComplete",
+                        "excluded": true
+                    },
+                    {
+                        "name": "MoveBack",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DelayMoveBack",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnSnapObject",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnTransition",
+                        "excluded": true
+                    },
+                    {
+                        "name": "FadeSprite",
+                        "excluded": true
+                    },
+                    {
+                        "name": "StartFloating",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopFloating",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ChangeCheckActionStepMix",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ChangeSetScale",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnAwake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStart",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CanSnap",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStartDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDrop",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetReferences",
+                        "excluded": true
+                    },
+                    {
+                        "name": "FindSnapPointWithSameName",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "VFXStart",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSpawn",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "sonnv.SonBoxShootIngredients",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "IsTapFirst#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "NumberObjectInTable#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IncreaseObject",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DecreaseObject",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnInit",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Shuffle",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ShootNextItem",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetRandom2DPosition",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnWin",
+                        "excluded": true
+                    },
+                    {
+                        "name": "MoveAndScaleRoutine",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsTap#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnPointerDown",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerUp",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.RangeAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -47673,8 +47958,8 @@
         "rules": {
             "texture": {
                 "default": {
-                    "maxWidth": 512,
-                    "maxHeight": 512,
+                    "maxWidth": 1024,
+                    "maxHeight": 1024,
                     "format": "png32",
                     "compression": "quantSize",
                     "quality": 65,
@@ -47703,8 +47988,8 @@
                         "name": "Assets/Fonts/LilitaOne-Regular SDF.asset"
                     },
                     {
-                        "maxWidth": 512,
-                        "maxHeight": 512,
+                        "maxWidth": 1024,
+                        "maxHeight": 1024,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -47713,8 +47998,8 @@
                         "name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset"
                     },
                     {
-                        "maxWidth": 512,
-                        "maxHeight": 512,
+                        "maxWidth": 1024,
+                        "maxHeight": 1024,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,

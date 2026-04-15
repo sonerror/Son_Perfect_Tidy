@@ -7,23 +7,9 @@ namespace sonnv
 {
     public class SonTapItem : SonMonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
-        [SerializeField] private bool isShowEffect = false;
-        [SerializeField] private List<ShowObjectEffect> listEffect;
+        //[SerializeField] private bool isShowEffect = false;
+        //[SerializeField] private List<ShowObjectEffect> listEffect;
         [SerializeField] private Sprite spriteNew;
-        private void ShowEffect()
-        {
-            if (isShowEffect)
-            {
-                spriteRenderer.sprite = spriteNew;
-                if (listEffect.Count > 0)
-                {
-                    foreach (ShowObjectEffect effect in listEffect)
-                    {
-                        effect.Hide();
-                    }
-                }
-            }
-        }
         [SerializeField] protected int maxLayer = 10;
         [SerializeField] protected SpriteRenderer spriteRenderer;
         [SerializeField] protected float scaleAmount = 1.1f;
@@ -58,7 +44,7 @@ namespace sonnv
             spriteRenderer.sortingOrder = maxLayer;
             if (sfxTap != null)
                 SoundManager.PlaySFXOneShot(sfxTap);
-            ShowEffect();
+            //ShowEffect();
             eventOnPointDown?.Invoke();
             if (canBlock)
             {

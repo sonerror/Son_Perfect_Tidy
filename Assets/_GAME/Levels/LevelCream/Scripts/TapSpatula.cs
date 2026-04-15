@@ -140,7 +140,7 @@ namespace sonnv
             {
                 _startLocalPosition = handTransform.localPosition;
                 _tapCount++;
-                TutorialManager.Ins.CountStep2();
+                // TutorialManager.Ins.CountStep2();
                 if (_tapCount >= tapToWin)
                 {
                     col.enabled = false;

@@ -9,16 +9,16 @@ using UnityEngine.Events;
 
 public class LevelControl : LevelBase
 {
-    private Camera cam;
+    [SerializeField] private Camera cam;
     protected override void Awake()
     {
         base.Awake();
+        DOTween.Init();
         maxLayer = 30;
-        cam = Camera.main;
     }
     protected virtual void Start()
     {
-        StartStep();
+        Invoke(nameof(StartStep), 0.1f);
     }
     [SerializeField] private int currentStep = 0;
     public int CurrentStep => currentStep;
@@ -32,15 +32,7 @@ public class LevelControl : LevelBase
             istap = true;
         }
     }
-    [SerializeField] private List<SonSnapObject> listSnapObjectStart;
-    private void SetStart()
-    {
-        foreach (SonSnapObject snap in listSnapObjectStart)
-        {
-            snap.enabled = true;
-            snap.Col.enabled = true;
-        }
-    }
+
     private Tween _delayTween;
     private void StartDelayStep(float delay)
     {
@@ -53,7 +45,6 @@ public class LevelControl : LevelBase
     IEnumerator IE_DelayStart()
     {
         yield return new WaitForSeconds(0.75f);
-        SetStart();
     }
     public void SetStateDoneStep(bool value)
     {
@@ -82,41 +73,15 @@ public class LevelControl : LevelBase
     }
     private void StartStep()
     {
+        Debug.Log("Luna Debug: StartStep called. CurrentStep = " + currentStep);
         isDoneStep = false;
 
         switch (currentStep)
         {
             case 0:
-                TutorialManager.Ins.SetNewTime(0.5f);
+                tutManager.SetNewTime(0.5f);
                 OnStartStep1();
-                break;
-            case 1:
-                TutorialManager.Ins.SetNewTime(3f);
-                OnStartStep2();
-                break;
-            case 2:
-                OnStartStep3();
-                break;
-            case 3:
-                OnStartStep4();
-                break;
-            case 4:
-                OnStartStep5();
-                break;
-            case 5:
-                OnStartStep6();
-                break;
-            case 6:
-                OnStartStep7();
-                break;
-            case 7:
-                OnStartStep8();
-                break;
-            case 8:
-                OnStartStep9();
-                break;
-            case 9:
-                OnStartStep10();
+                Debug.Log("Luna Debug: Entered Step 0 logic");
                 break;
         }
     }
@@ -135,199 +100,62 @@ public class LevelControl : LevelBase
         emoji.transform.position = position + Vector3.up * 0.5f + Vector3.left * 0.5f;
         emoji.ShowPositive();
     }
-    private Dictionary<SonSnapObject, UnityAction> snapActions = new Dictionary<SonSnapObject, UnityAction>();
-    void OnDisable()
-    {
-        foreach (var kvp in snapActions)
-        {
-            if (kvp.Key != null)
-            {
-                kvp.Key.OnSnap.RemoveListener(kvp.Value);
-            }
-        }
-        snapActions.Clear();
-    }
-    [SerializeField] private PetOrderManager petOrderManager;
-    [SerializeField] private SonSnapObject snapObjectKiwi;
+
+
+    [SerializeField] private SonBoxShootIngredients shootIngredients;
+    [SerializeField] private List<SonDragSnap> listSnapObjectRollDone;
+    public List<SonDragSnap> ListSnapObjectRollDone => listSnapObjectRollDone;
+    [SerializeField] private int countSnapWin = 5;
+    [SerializeField] private TutorialManager tutManager;
+    private int countSnap = 0;
 
     private void OnStartStep1()
     {
-        petOrderManager.OnShowOrder();
-        StartDelayStep(0.5f);
-        snapObjectKiwi.OnSnap.AddListener(() =>
-        {
-            Debug.Log("step1");
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private SonSnapPoint snapPointSpatula;
-    [SerializeField] private TapSpatula tapSpatula;
-    private void OnStartStep2()
-    {
-        snapPointSpatula.ChangeCanSnap(true);
-        tapSpatula.OnWin.AddListener(() =>
-        {
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private SonSnapPoint snapPointMilk;
-    [SerializeField] private SonSnapObject snapObjectMilk;
-    private void OnStartStep3()
-    {
-        snapPointMilk.ChangeCanSnap(true);
-        snapObjectMilk.OnTrans.AddListener(() =>
-        {
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private FoodItem foodItem;
-    private void OnStartStep4()
-    {
-        foodItem.Col.enabled = true;
-        foodItem.OnDone.AddListener(() =>
-        {
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private SonSnapPoint snapPointSpatulaCut;
-    [SerializeField] private CreamCut creamCut;
-    private void OnStartStep5()
-    {
-        snapPointSpatulaCut.ChangeCanSnap(true);
-        creamCut.onComplete.AddListener(() =>
-        {
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private SonSnapPoint snapPointSpatulaDrag;
-    [SerializeField] private GameObject objCut;
-    [SerializeField] private GameObject objRoll;
-    [SerializeField] private CreamRollController creamRollController;
-    private void OnStartStep6()
-    {
-        snapPointSpatulaDrag.ChangeCanSnap(true);
-        objCut.SetActive(false);
-        objRoll.SetActive(true);
-        creamRollController.onAllRollsCompleted.AddListener(() =>
-        {
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private SonSnapObject snapObjectRollDone;
-    private void OnStartStep7()
-    {
-        snapObjectRollDone.enabled = true;
-        snapObjectRollDone.Col.enabled = true;
-        snapObjectRollDone.OnSnap.AddListener(() =>
-        {
-            DoneStep();
-            TryNextStep();
-        });
-    }
-    [SerializeField] private List<SonSnapObject> listSnapObjectRollDone;
-    [SerializeField] private List<SonSnapPoint> listSnapPointRollDone;
-    [SerializeField] private SonSnapObject snapChocola;
-    private void OnStartStep8()
-    {
-        foreach (SonSnapPoint point in listSnapPointRollDone)
-        {
-            point.ChangeCanSnap(true);
-        }
+        tutManager.enableCountTime = true;
         SetSnapObject();
-        snapChocola.OnTrans.AddListener(() =>
-        {
-            isDone2 = true;
-            CheckDoneStep8();
-        });
     }
     private void SetSnapObject()
     {
+        foreach (SonDragSnap obj in listSnapObjectRollDone)
+        {
+            SonDragSnap cache = obj;
 
-        foreach (SonSnapObject obj in listSnapObjectRollDone)
-        {
-            SonSnapObject cache = obj;
-            UnityAction action = delegate
-            {
-                OnSnapHandler(cache);
-            };
-            snapActions[cache] = action;
-            cache.OnSnap.AddListener(action);
+            cache.OnSnap.AddListener(() => OnSnapHandler(cache));
         }
     }
-    private void OnSnapHandler(SonSnapObject obj)
+    [SerializeField] private VFXStart vfxPrefab;
+    private void OnSnapHandler(SonDragSnap obj)
     {
-        if (snapActions.ContainsKey(obj))
+        if (obj == null) return;
+        Debug.Log("Snap");
+
+        if (vfxPrefab != null)
         {
-            obj.OnSnap.RemoveListener(snapActions[obj]);
-            snapActions.Remove(obj);
+            VFXStart vfx = Instantiate(vfxPrefab, obj.SnapToPosition.transform.position, Quaternion.identity);
+            vfx.gameObject.SetActive(true);
         }
-        int removedIndex = listSnapObjectRollDone.IndexOf(obj);
-        if (removedIndex < 0) return;
-        listSnapObjectRollDone.RemoveAt(removedIndex);
-        if (removedIndex < TutorialManager.Ins.TfItem.Count)
-            TutorialManager.Ins.TfItem.RemoveAt(removedIndex);
-        if (listSnapObjectRollDone.Count <= 0)
+
+        obj.OnSnap.RemoveAllListeners();
+
+        if (listSnapObjectRollDone.Contains(obj))
         {
-            isDone1 = true;
-            CheckDoneStep8();
+            listSnapObjectRollDone.Remove(obj);
+        }
+
+        countSnap++;
+
+        if (shootIngredients != null)
+            shootIngredients.DecreaseObject();
+
+        if (countSnap >= countSnapWin || listSnapObjectRollDone.Count == 0)
+        {
+            CheckDoneStep1();
         }
     }
-    private bool isDone1 = false;
-    private bool isDone2 = false;
-    private void CheckDoneStep8()
+    private void CheckDoneStep1()
     {
-        if (isDone1 && isDone2)
-        {
-            DoneStep();
-            TryNextStep();
-        }
-    }
-    [SerializeField] private SpriteRenderen layerr;
-    [SerializeField] private SonSnapObject snapDone;
-    [SerializeField] private SonSnapPoint snapPointPet;
-    [SerializeField] private AudioClip sfxHappy;
-    private void OnStartStep9()
-    {
-        layerr.OnInit();
-        snapDone.enabled = true;
-        snapDone.Col.enabled = true;
-        snapPointPet.ChangeCanSnap(true);
-        snapDone.OnSnap.AddListener(() =>
-        {
-            TutorialManager.Ins.enableCountTime = false;
-            petStep1.PlayDropThenIdle();
-            SoundManager.PlaySFX(sfxHappy);
-            HidePet();
-        });
-    }
-    [SerializeField] private PetOrder petStep1;
-    [SerializeField] private PetOrder petStep2;
-    private void HidePet()
-    {
-        petStep1.OnHide();
-        DoneStep();
-        TryNextStep();
-    }
-    [SerializeField] private List<GameObject> listObjHide;
-    private void OnStartStep10()
-    {
-        petStep2.OnShow(1.25f);
-        StartCoroutine(IEShowParticle());
-    }
-    private IEnumerator IEShowParticle()
-    {
-        yield return new WaitForSeconds(1.25f);
-        foreach (GameObject obj in listObjHide)
-        {
-            obj.SetActive(true);
-        }
-        TutorialManager.Ins.enableCountTime = true;
+        // DoneStep();
+        // TryNextStep();
         GameManager.Ins.showEndGame();
     }
 }

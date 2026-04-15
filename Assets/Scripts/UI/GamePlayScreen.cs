@@ -1,34 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GamePlayScreen : UIScreen
 {
-  public GameObject btnPlay;
-  public GameObject TextTutorial;
-  public GameObject objProcess, objImgCook;
-  private bool istap = false;
-  public void gotoStore()
+  [Header("Orientation Layouts")]
+  [SerializeField] private GameObject panelLandscape1;
+  [SerializeField] private GameObject panelLandscape2;
+
+  [SerializeField] private GameObject panelPortrait1;
+  [SerializeField] private GameObject panelPortrait2;
+
+  [Header("Main")]
+  public GameObject btnPlayLandscape;
+  public GameObject btnPlayPortrait;
+  private bool _isTap = false;
+
+  public void GotoStore()
   {
     GameManager.Ins.gotoStore();
   }
 
-  void Update()
+  private void Update()
   {
-    if (Input.GetMouseButtonDown(0) && istap == false)
+    if (Input.GetMouseButtonDown(0) && !_isTap)
     {
-      btnPlay.SetActive(true);
-      TextTutorial.SetActive(false);
-      objProcess.SetActive(true);
-      objImgCook.SetActive(true);
+      if (btnPlayLandscape != null) btnPlayLandscape.SetActive(true);
+      if (btnPlayPortrait != null) btnPlayPortrait.SetActive(true);
       SoundManager.Ins.PlayBgm();
-      istap = true;
+      _isTap = true;
     }
   }
 
   public override void Resize(Vector2 gameSize)
   {
     base.Resize(gameSize);
-    RectTf.sizeDelta = gameSize;
+
+    bool isLandscape = Screen.width > Screen.height;
+
+    if (panelLandscape1 != null) panelLandscape1.SetActive(isLandscape);
+    if (panelLandscape2 != null) panelLandscape2.SetActive(isLandscape);
+
+
+    if (panelPortrait1 != null) panelPortrait1.SetActive(!isLandscape);
+    if (panelPortrait2 != null) panelPortrait2.SetActive(!isLandscape);
+    Debug.Log("shooooowwwwwwwwwwwwww UI");
   }
 }

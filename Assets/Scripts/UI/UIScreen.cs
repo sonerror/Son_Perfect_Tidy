@@ -1,26 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UIScreen : UIUnit
 {
-    private Transform tf;
-    public Transform Tf => tf ? tf : tf = transform;
-    public bool LimitX = false;
-    public bool LimitY = false;
+    private Transform _tf;
+    public Transform Tf
+    {
+        get
+        {
+            if (_tf == null) _tf = transform;
+            return _tf;
+        }
+    }
 
-    public virtual void OnClose() { }
+    [Header("Screen Size Constraints")]
+    public bool limitX = false;
+    public bool limitY = false;
+    [SerializeField] private Vector2 maxResolution = new Vector2(1080f, 1920f);
+
     public virtual void OnCreate() { }
     public virtual void OnShow() { }
     public virtual void OnHide() { }
-    public virtual void Resize(Vector2 gameSize) { }
+    public virtual void OnClose() { }
 
-    public Vector2 fomatSize(Vector2 gameSize)
+    public virtual void Resize(Vector2 gameSize)
     {
-        if (LimitX && gameSize.x > 1080)
-            gameSize.x = 1080;
-        if (LimitY && gameSize.y > 1920)
-            gameSize.y = 1920;
-        return gameSize;
+        // Gán kích thước đã được giới hạn an toàn
+        RectTf.sizeDelta = FormatSize(gameSize);
+    }
+
+    private Vector2 FormatSize(Vector2 gameSize)
+    {
+        float targetX = limitX ? Mathf.Min(gameSize.x, maxResolution.x) : gameSize.x;
+        float targetY = limitY ? Mathf.Min(gameSize.y, maxResolution.y) : gameSize.y;
+        return new Vector2(targetX, targetY);
     }
 }
