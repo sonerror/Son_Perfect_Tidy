@@ -9,11 +9,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
-    <ProjectGuid>{00027C00-1438-7999-66D2-51D0D33DBF97}</ProjectGuid>
+    <RootNamespace>UnityEditor.Localization</RootNamespace>
+    <ProjectGuid>{32855BC6-F244-DB53-1970-E0F904D9CD1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <AssemblyName>Unity.Localization.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_62;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
+    <DefineConstants>UNITY_2022_3_62;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;MODULE_AUDIO;MODULE_UITK;PACKAGE_UGUI;PACKAGE_TMP;ADDRESSABLES_ANALYZE;ENABLE_PROPERTY_VARIANTS;ENABLE_SAVE_ASSET_IF_DIRTY;ENABLE_SEARCH;ENABLE_SEARCH_QUERY_BUILDER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -60,122 +60,206 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AllIn1SpriteShader\Editor\AllIn1ShaderScriptEditor.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Editor\CFXR_ShaderImporter.cs" />
-    <Compile Include="Assets\AllIn1SpriteShader\Editor\AllIn1SpriteShaderUiMaskMaterialInspector.cs" />
-    <Compile Include="Assets\AllIn1SpriteShader\Editor\AllIn1SpriteShaderMaterialInspector.cs" />
-    <Compile Include="Assets\AllIn1SpriteShader\Editor\AllIn1ShaderGradientDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\SerializedTableEntryReference.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Core\LocalizeComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\SerializedTableReference.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\UITK\LocalizedAssetUxmlSerializedDataPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\GameViewLanguageMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Asset Pipeline\LocalizationAssetPostProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Addressables\LocaleAnalyzeRule.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Reporting\ITaskReporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Pseudo\CharacterSubstitutorPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\SheetsServiceProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\TrackedObjectFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\TreeViewPopupWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\Columns\KeyIdColumns.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedReferencePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\UITK\LocalizedStringUxmlSerializedDataPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\ScenePropertyTracker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\GoogleSheetsExtension.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\iOS\BuildPlayerIOS.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\MenuItems.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\Columns\CsvColumns.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Reporting\TaskTimerReporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\TimeFormatterPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\SceneControlsWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\StringTableSearchProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\AssetTableSearchProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedAssetTablePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Components\LocalizeStringEventEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\PathHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Pseudo\PseudoLocaleEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Addressables\StringTableAnalyzeRule.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Asset Pipeline\LocalizationBuildPlayer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\CSV.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Addressables\GroupResolverPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\ColumnSelectors.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\CsvExtensionPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\GenericAssetTableListViewColumns.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\ProjectCollectionsTableSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\V2\xliff 2.0.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\iOS\Player.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\CsvExtension.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\ExporterWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\AssetUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\Columns\IKeyColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\LocalizationEditorEvents.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\LocalizationTableCollection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\StringTableTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\TableEntryTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\UITK\TableEntryReferenceConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Pseudo\ExpanderPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\ProjectLocalePopupField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\XliffDocument.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\AssetTableListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\GenericAssetTableTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\V1.2\xliff 1.2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\QueryBuilder\Blocks\CollectionNameFilterBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\CollectionExtension.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\AssetTableCollection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\SmartFormatterPropertyField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\CommonInterfaces.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Metadata\MetadataCollectionField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\Locale\CustomLocaleUIWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\TrackedPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\TrackedEnumPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\UITK\TableReferenceConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\V1.2\xliff-core-1.2-strict.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\KeyMetadataColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\PersistentVariablePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\CharacterSet\ExportCharacterSetWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedAssetField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\ProjectTablesPopup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Addressables\AddressableGroupRulesEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\Locale\LocaleEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\AssetNotPersistentException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\GameObjectLocalizerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\LocalizationTableCollectionCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\LocalizationSettingsMenuItems.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\TrackedObjectPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\FilterIds.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\LocalizationPreferencesProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\LocaleMetadataColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Device Simulator\LocalizationDeviceSimulatorPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\AssetTableTreeViewItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\LocalizationTablesWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\MetadataEditorWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\PropertyDrawerExtended.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\SheetColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\ReorderableListExtended.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\SmartFormatField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Device Simulator\PackageLanguageMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\LocalizationProjectSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\GenericAssetTableListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\ReorderManipulator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\Android\BuildPlayerAndroid.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\NewSheetProperties.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Attributes\LocalizationTablesWindowAttributes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\iOS\PBXProjectExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\SharedTableDataEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\XLIFF\XliffVersionPopup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\StringTableCollection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\TableCreatorWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\DrivenPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\TextMesh Pro\LocalizeComponent_TMP.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\Locale\LocaleGeneratorWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Addressables\AnalyzeRuleBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\CharacterSet\CharacterSetMenuItems.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\Utility\FallbackLocaleHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Attributes\CollectionExtensionAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\LocalizationEditorSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\LocaleCommentColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\TypeVersionCheck.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedStringPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Addressables\AddressableGroupRules.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\AddressableEntryNotFoundException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\GlobalVariableGroupList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\LocalizationTableCollectionEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\TableTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Resources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Icons\EditorIcons.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Metadata\FallbackLocalePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\TypeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Extension Methods\RectExtensionMethods.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\LocaleColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\ReorderableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\Android\Player.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Extension Methods\SerializedPropertyExtensionMethods.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\ManagedReferenceUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\QueryBuilder\Blocks\MetadataValueFilterBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\SmartFormatFieldIMGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\TrackedLocalizedPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\PushColumnSheetRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\KeyCommentColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedAssetPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Addressables\GroupResolver.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Reporting\ProgressBarReporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedReferencePicker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\LocalizationTableEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Extension Methods\LazyLoadExtendedExtensionMethods.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\Locale\LocaleIdentifierPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\Xliff.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\SheetsServiceProvider.deprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\Locale\LocalesProviderPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\KeyColumn.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\GlobalVariableGroupEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\MetadataReorderableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\Columns\LocaleColumns.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\QueryBuilder\Blocks\CollectionGroupFilterBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Platform\Android\GradleProjectSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Property Variants\ContextualPropertyMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Tables\StringTableListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Settings\TableEntryReferenceMethod.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Addressables\AssetTableAnalyzeRule.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\GoogleSheetsExtensionPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Reporting\ProgressReporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\LocalizationSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\GoogleSheets.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\HelpBoxFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\EditorAddressablesInterface.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\LocalizationSettingsEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\ManagedReferenceReorderableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Utility\UndoScope.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\Columns\ColumnMapping.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\V2\xliff_core_2.0.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\TableSearchProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\SheetsServiceProviderEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\CSV\MenuItems.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Metadata\PlatformOverridePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\UITK\PersistentVariableUxmlSerializedDataPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Xliff\ListExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Search\QueryBuilder\Blocks\MetadataTypeFilterBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedStringTablePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedTablePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\Google\Columns\ColumnMapping.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Settings\Locale\LocaleGeneratorListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\LocalizedStringField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Localized Reference\TableReferenceField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Plugins\UGUI\LocalizeComponent_UGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Smart Format\PersistentVariablesSourcePropertyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\differences.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm-help.ko.txt" />
-    <None Include="D:\Playabale\Pack\fix\scripts\Editor\EditorScripts.dll">
-      <Link>Editor\EditorScripts.dll</Link>
-    </None>
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\semantic.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\basecommands.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\binmergetool.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\commontypes.ko.txt" />
-    <None Include="Assets\DOTween\Editor\DOTweenEditor.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\guihelp.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\workspaceserver.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\i3.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\commontypes.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\xdiff.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\i3.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\differences.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\common.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\images.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\basecommands.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\xdiff.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\mergetool.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\i3.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\guihelp.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\basecommands.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\plastic-gui.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm-help.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\mergetool.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\unityplastic.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\guihelp.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\configurehelper.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\binmergetool.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\basecommands.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\images.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\guihelp.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\mergetool.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\clientcommon.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\xdiff.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\i3.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\workspaceserver.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\plastic-gui.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\semantic.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\plastic-gui.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\configurehelper.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\binmergetool.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\binmergetool.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\plastic-gui.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\log4netPlastic.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\lz4x64Plastic.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\workspaceserver.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\guihelp.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\binmergetool.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\images.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\binmergetool.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\clientcommon.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\commontypes.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\semantic.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\basecommands.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\differences.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm-help.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm-help.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\images.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\i3.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\commontypes.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\configurehelper.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\workspaceserver.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\mergetool.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\clientcommon.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\FileSystemWatcherLicense.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\commontypes.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\clientcommon.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\basecommands.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\xdiff.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\differences.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\images.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\mergetool.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\differences.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\configurehelper.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\semantic.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\mergetool.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\workspaceserver.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\i3.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\images.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\semantic.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\plastic-gui.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\xdiff.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\common.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\clientcommon.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\guihelp.es.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\configurehelper.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\clientcommon.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\semantic.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\configurehelper.ko.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm-help.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\workspaceserver.en.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm-help.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\zlib64Plastic.dll" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\plastic-gui.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\commontypes.ja.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\xdiff.zh-Hant.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\cm.zh-Hans.txt" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Localization\differences.en.txt" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\LocalizationStyles.uss" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\MetadataEditorWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Unity.Localization.ThirdParty.Editor.dll" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\ReorderableList.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\SmartFormatter.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\LocalesProviderItem.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\SceneControlsWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\CreateLocalizationSettings.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\TableCreatorWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\AddressableGroupRulesEditor.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\SmartFormatField.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\ExportCharacterSetWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\XliffExporterWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\LocalizationAssetTableEditor.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\LocalizationSettings.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\LocalesProvider.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\Unity.Localization.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\CustomLocaleUIWindow.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\ProjectCollectionsTableSelector.uxml" />
+    <None Include="Library\PackageCache\com.unity.localization@1.5.8\Editor\UI\Templates\LocalizationTablesWindow.uxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -526,92 +610,12 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="EditorScripts">
-      <HintPath>D:\Playabale\Pack\fix\scripts\Editor\EditorScripts.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\DOTween\Editor\DOTweenEditor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.Reflection.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.6\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.Serialization">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\log4netPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.Utilities">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\DOTween\DOTween.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sirenix.Utilities.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RuntimeScripts">
-      <HintPath>D:\Playabale\Pack\fix\scripts\Runtime\RuntimeScripts.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Localization.ThirdParty.Editor">
+      <HintPath>Library\PackageCache\com.unity.localization@1.5.8\Editor\Unity.Localization.ThirdParty.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -1128,9 +1132,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{9CA85F07-58B2-01BF-92EC-33D248C39839}</Project>
-      <Name>Assembly-CSharp</Name>
+    <ProjectReference Include="Unity.Localization.csproj">
+      <Project>{62F7D204-4505-9BEB-72B2-DAE7CBCA87DF}</Project>
+      <Name>Unity.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Addressables.Editor.csproj">
+      <Project>{0D889A90-8619-878A-0BAD-76D4A0DE1E75}</Project>
+      <Name>Unity.Addressables.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Addressables.csproj">
+      <Project>{5CFCC2F2-75E6-8343-AA40-E72DC47A5C4D}</Project>
+      <Name>Unity.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.013.csproj">
+      <Project>{C7648C90-4ACC-7B09-DA71-4C5053CBC683}</Project>
+      <Name>Unity.InternalAPIEditorBridge.013</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ResourceManager.csproj">
+      <Project>{9950841E-D816-1DEA-B5D0-42F34E074BB5}</Project>
+      <Name>Unity.ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{3A250D21-4FA3-6A0C-5595-FE348FA5A4E1}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{DEDCCDD2-FD7D-676E-EC41-CCBF82CF321E}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{4578AC59-FC1C-9926-EF57-E00CB906227F}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{C915B208-06EE-9904-6666-1BD6976AF25B}</Project>
@@ -1139,186 +1171,6 @@
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{D6C2E2FA-0242-D4EC-E64D-1C7465CD59BC}</Project>
       <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{AF168BA8-CF6B-3CD8-FEDD-8666BE5A4532}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ResourceManager.csproj">
-      <Project>{9950841E-D816-1DEA-B5D0-42F34E074BB5}</Project>
-      <Name>Unity.ResourceManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
-      <Project>{3429D7CF-118C-391A-BFC4-A8FC6882DA35}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{8149E48B-E47C-66E6-C05B-4DC25ED2B6EF}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{62D9C309-8B11-295C-3186-1649ACE00AE9}</Project>
-      <Name>Unity.VisualScripting.Shared.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
-      <Project>{5A581119-784B-A99C-6106-6A0051CEED15}</Project>
-      <Name>Unity.ScriptableBuildPipeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Localization.Editor.csproj">
-      <Project>{32855BC6-F244-DB53-1970-E0F904D9CD1C}</Project>
-      <Name>Unity.Localization.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityLocalization.csproj">
-      <Project>{B7BB7299-ABFE-5479-C8A8-F97CCF158D7E}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityLocalization</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{4A7A2180-7DC2-330A-CC40-42A621346DAF}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-csharp.csproj">
-      <Project>{527CEEE3-A2BE-FE6A-BBDA-8E2F4D014EBC}</Project>
-      <Name>spine-csharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{8300C6D5-D01E-3386-4CC0-85015322C345}</Project>
-      <Name>Unity.VisualScripting.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{1CBC9A85-1C3C-AD55-33E8-5958F585EA2D}</Project>
-      <Name>Unity.VisualScripting.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{DEDCCDD2-FD7D-676E-EC41-CCBF82CF321E}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{3B9A532C-F6C2-7AA7-9FFD-F90163739677}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{4578AC59-FC1C-9926-EF57-E00CB906227F}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{FAB70E10-EB52-4082-E820-A5C11971A7D4}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
-      <Project>{53641B5F-6E57-6A8A-44F3-24F8E1661BDE}</Project>
-      <Name>Unity.Formats.Fbx.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{31F931B7-E31E-4E80-DCB2-570E51AB2D66}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{22D4437C-A03D-F905-B745-6A39BABCF091}</Project>
-      <Name>Unity.VisualScripting.Flow.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{E3B9836C-3E7D-11C9-6809-567D899803DF}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.Unity.Addressables.csproj">
-      <Project>{2EB51339-4BEA-BF05-84CC-3AE34BBF3590}</Project>
-      <Name>Sirenix.OdinInspector.Modules.Unity.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{C5F9EF86-C7EA-595D-11AD-98203ADFF2FE}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
-      <Project>{E2B4DB2C-8524-A6E3-820B-97134A3C82A3}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Localization.csproj">
-      <Project>{62F7D204-4505-9BEB-72B2-DAE7CBCA87DF}</Project>
-      <Name>Unity.Localization</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{8AFD7291-6B50-849C-D935-7B4F3FC21BBE}</Project>
-      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
-      <Project>{FC1020EB-3FBA-CECB-5031-B80604415B31}</Project>
-      <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
-      <Project>{61E71CDE-9AD3-E9C4-6577-9148B0591312}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
-      <Project>{BC641572-315D-5E6F-34D6-9A0644569163}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{CF336BA6-79AA-BEC4-9B56-BC6CE8C75441}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Addressables.Editor.csproj">
-      <Project>{0D889A90-8619-878A-0BAD-76D4A0DE1E75}</Project>
-      <Name>Unity.Addressables.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Autodesk.Fbx.csproj">
-      <Project>{724AA17C-A62D-F744-D061-D753AA8CB956}</Project>
-      <Name>Autodesk.Fbx</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{31B7D3AA-38E5-1380-EC4D-876A2D66BD08}</Project>
-      <Name>Unity.VisualScripting.State.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Settings.Editor.csproj">
-      <Project>{C4B2573B-ED6D-0CC2-FFE8-06F22AE80BEC}</Project>
-      <Name>Unity.Settings.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity.csproj">
-      <Project>{9A537066-BD93-97A9-0381-0D118DD8B2BC}</Project>
-      <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{6CF13D3F-FE21-7762-69CA-C170E80BEE97}</Project>
-      <Name>Unity.Mathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-editor.csproj">
-      <Project>{7F86138B-CA93-1A6F-BABD-1A0E48513982}</Project>
-      <Name>spine-unity-editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{3A250D21-4FA3-6A0C-5595-FE348FA5A4E1}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{B0BC1D83-6724-A218-DA43-57001CB06527}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Formats.Fbx.Editor.csproj">
-      <Project>{D37CDF3A-FC5F-40E3-7F4F-E10650726F02}</Project>
-      <Name>Unity.Formats.Fbx.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Autodesk.Fbx.Editor.csproj">
-      <Project>{AD7D8181-4DDE-337C-9D52-F11A6BBCF38C}</Project>
-      <Name>Autodesk.Fbx.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{814787B2-DD90-95CB-47E2-CE3CCECC1F48}</Project>
-      <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{29C8AC31-58BA-E3D5-4F4F-D52D60158A1C}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
-      <Project>{1B152E60-7F50-EAB3-9959-5D6ED2A0CFC6}</Project>
-      <Name>Unity.ScriptableBuildPipeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityLocalization.Editor.csproj">
-      <Project>{25E2F238-95D4-B757-369F-DF84DE6F3029}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityLocalization.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Addressables.csproj">
-      <Project>{5CFCC2F2-75E6-8343-AA40-E72DC47A5C4D}</Project>
-      <Name>Unity.Addressables</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
