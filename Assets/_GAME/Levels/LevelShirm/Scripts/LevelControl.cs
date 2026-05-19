@@ -154,8 +154,6 @@ public class LevelControl : LevelBase
     }
     private void CheckDoneStep1()
     {
-        // DoneStep();
-        // TryNextStep();
         GameManager.Ins.showEndGame();
     }
 }
