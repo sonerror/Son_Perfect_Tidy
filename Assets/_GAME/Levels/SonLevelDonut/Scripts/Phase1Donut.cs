@@ -303,7 +303,7 @@ namespace sonnv
         private void OnStartStep6()
         {
             Debug.Log("End Game Phase 1");
-            GameManager.Ins.showEndGame();
+            GameManager.Ins.ShowEndGame();
             spatula.SetIngredient(IngredientType.Spatula, false);
             mixFlourBowl.OnIngredientDone = OnAddEggSpatula;
         }

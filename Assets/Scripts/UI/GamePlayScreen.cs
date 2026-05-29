@@ -25,7 +25,7 @@ public class GamePlayScreen : UIScreen
     {
       if (btnPlayLandscape != null) btnPlayLandscape.SetActive(true);
       if (btnPlayPortrait != null) btnPlayPortrait.SetActive(true);
-      SoundManager.Ins.PlayBgm();
+      //SoundManager.Ins.PlayBgm();
       _isTap = true;
     }
   }

@@ -64,6 +64,7 @@
     <Compile Include="Assets\_GAME\Levels\SonLevelDonut\Scripts\IngredientHolderTopping.cs" />
     <Compile Include="Assets\_GAME\Levels\Levelvalen\Scripts\Level1528.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\Cook\Utilities\Transition\UpTransition.cs" />
+    <Compile Include="Assets\_GAME\Playable\SonLevel\LevelTidyPLY189\Paint2d\RevealImage.cs" />
     <Compile Include="Assets\Scripts\Object\HandCtrl.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\CookV2\Utilities\Bowl\IngredientBowl.cs" />
     <Compile Include="Assets\_GAME\Levels\SonLevelDonut\Scripts\SpoonForwarder.cs" />
@@ -297,6 +298,7 @@
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\Cook\Utilities\Spices\ShakerSpices.cs" />
     <Compile Include="Assets\_GAME\Levels\LevelShirm\Scripts\MiniGame.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\Cook\Utilities\DirtyManager.cs" />
+    <Compile Include="Assets\_GAME\Playable\SonLevel\LevelTidyPLY189\Paint2d\RevealPen.cs" />
     <Compile Include="Assets\_GAME\Levels\LevelCream\Scripts\OrderOfPet.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\Cook\Utilities\GarbageManager.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\CookV2\Utilities\Spoon\FreeSpiceSpoon.cs" />
@@ -325,12 +327,14 @@
     <Compile Include="Assets\_GAME\Levels\LevelMacaron\Scripts\TapPaper.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\CookV2\Base\Progression\APDProgressionStage.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\Cook\Utilities\Transition\MaskTransition.cs" />
+    <Compile Include="Assets\_GAME\Core\Scripts\SonNv\Paint\SonDragPaintCaller.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\Cook\Utilities\Spoon\FreeSpoon.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\CookV2\Base\BeforeCompleteAction\SpiceShakingAction.cs" />
     <Compile Include="Assets\_GAME\Levels\SonLevelBarramundi\Scripts\Phase1\InteractObject.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\FoodStand\Scripts\Display\MaterialInstancer.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\CookV2\Base\APDv2Drag.cs" />
     <Compile Include="Assets\_GAME\Levels\LvTanghulu\Scripts\Stage 2\TanghuluFinalPhase.cs" />
+    <Compile Include="Assets\_GAME\Core\Scripts\SonNv\Paint\SonSpriteErasePainter2D.cs" />
     <Compile Include="Assets\_GAME\Levels\SonLevelDonut\Scripts\DonutInPanHolder.cs" />
     <Compile Include="Assets\_GAME\Core\Scripts\AnhPD\CookV2\Utilities\Other\SimpleUseMeshFold.cs" />
     <Compile Include="Assets\_GAME\Levels\LevelMacaron\Scripts\MixerTrigger.cs" />
@@ -397,6 +401,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\_GAME\Playable\SonLevel\LevelTidyPLY189\Paint2d\RevealShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

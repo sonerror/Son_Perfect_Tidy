@@ -716,9 +716,23 @@ MonoBehaviour:
     upToDate: 0
     keywords:
     - _ALPHABLEND_ON
+  - shaderCompilerPlatform: 5
+    shader: {fileID: 4800000, guid: 761a1444ba793ac499c5d45a3b317477, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
+  - shaderCompilerPlatform: 9
+    shader: {fileID: 4800000, guid: 761a1444ba793ac499c5d45a3b317477, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 2073
+  version: 2425
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

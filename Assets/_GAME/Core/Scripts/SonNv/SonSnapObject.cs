@@ -3,6 +3,10 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using sonnv;
+using Sirenix.OdinInspector;
+using System.Collections;
+using System.Collections.Generic;
+using Utilities;
 namespace sonnv
 {
     [RequireComponent(typeof(Collider2D))]
@@ -31,6 +35,8 @@ namespace sonnv
         [SerializeField] private int onSnapOrderLayer;
         [SerializeField] protected bool isRotate;
 
+        [SerializeField] protected bool isRb = false;
+
         [SerializeField] private AudioData onDragAudio;
         [SerializeField] private AudioData onSnapAudio;
 
@@ -41,6 +47,9 @@ namespace sonnv
         [SerializeField] protected UnityEvent notSnapWhenNearSnapPoint;
         [SerializeField] protected UnityEvent onMovebackDone;
         [SerializeField] protected UnityEvent onSnapFail;
+
+        [SerializeField] protected UnityEvent onSnapBin;
+        [SerializeField] private AudioData onBinAudio;
 
 
         [SerializeField] private bool isEnableCollideWhenEnableThis;
@@ -217,7 +226,7 @@ namespace sonnv
             _isDragging = true;
             StopFloating();
             sprite.sortingOrder = onDragOrderLayer;
-            if (!ignoreRigidBody && rb)
+            if (!ignoreRigidBody && rb && !isRb)
                 rb.bodyType = RigidbodyType2D.Static;
             col.isTrigger = true;
             UpdateMousePos(eventData);
@@ -275,7 +284,7 @@ namespace sonnv
                 _dragTimeoutTween?.Kill();
             }
             StartFloating();
-            if (!ignoreRigidBody && rb)
+            if (!ignoreRigidBody && rb && !isRb)
                 rb.bodyType = RigidbodyType2D.Dynamic;
             col.isTrigger = false;
             Tf.localScale = _initScale;
@@ -316,7 +325,7 @@ namespace sonnv
                         notSnapWhenNearSnapPoint.Invoke();
                         break;
                     }
-                    if (!ignoreRigidBody && rb)
+                    if (!ignoreRigidBody && rb && !isRb)
                         rb.bodyType = RigidbodyType2D.Static;
 
                     if (attachToSnapPoint)
@@ -330,12 +339,21 @@ namespace sonnv
                     OnSnapObject();
                     if (!isTrans)
                     {
-                        Tf.DOMove(snapPoint.Tf.position, 0.2f)
+                        if (isRb == true && rb)
+                        {
+                            sfxBin.Play();
+                        }
+                        Tf.DOMove(snapPoint.Tf.position, 0.15f)
                           .OnComplete(() =>
                           {
                               if (isChangeScaleMoveToSnap)
                               {
                                   Tf.localScale = Vector3.one * scaleAffterSnap;
+                              }
+                              if (isRb == true && rb)
+                              {
+                                  rb.bodyType = RigidbodyType2D.Dynamic;
+                                  StartCoroutine(IE_DelayHideObj());
                               }
                               onSnap.Invoke();
                           });
@@ -369,6 +387,18 @@ namespace sonnv
                 sprite.sortingOrder = onDropOrderLayer;
                 onDrop.Invoke();
             }
+        }
+        [SerializeField] protected AudioSource sfxBin;
+        IEnumerator IE_DelayHideObj()
+        {
+            yield return new WaitForSeconds(0.55f);
+            Tf.localScale = Vector3.one * 0;
+            rb.bodyType = RigidbodyType2D.Static;
+            onSnapBin?.Invoke();
+        }
+        private void SetScaleTF()
+        {
+            
         }
         private void UpdateMousePos(PointerEventData eventData)
         {
@@ -446,6 +476,13 @@ namespace sonnv
                     0.3f
                 );
             }
+        }
+        [Button]
+        public void GetReferences()
+        {
+            sprite = GetComponentInChildren<SpriteRenderer>();
+            rb = GetComponentInChildren<Rigidbody2D>();
+            col = GetComponentInChildren<Collider2D>();
         }
     }
 }

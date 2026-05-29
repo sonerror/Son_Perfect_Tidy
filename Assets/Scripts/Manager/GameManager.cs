@@ -23,7 +23,7 @@ public class GameManager : Singleton<GameManager>
   }
   public bool isEndGame = false;
 
-  public void showEndGame()
+  public void ShowEndGame()
   {
     Debug.Log("End Game");
     isEndGame = true;

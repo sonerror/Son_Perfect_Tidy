@@ -37,6 +37,8 @@ namespace sonnv
         [SerializeField] protected bool isKnife;
 
         [Header("Drag")]
+        [SerializeField] private bool CanBlockDrag = false;
+
         [SerializeField] private bool useUpdateToDragLerp;
         [SerializeField, Range(0f, 1f)] private float interpolateSpeed = 0.8f;
         [SerializeField] private bool ignoreRigidBody;
@@ -165,6 +167,7 @@ namespace sonnv
         }
         private void Update()
         {
+            if (CanBlockDrag) return;
             if (!useUpdateToDragLerp || !_isDragging || IsSnap) return;
 
             Tf.position = Vector3.Lerp(Tf.position, _mousePos, interpolateSpeed);
@@ -174,6 +177,8 @@ namespace sonnv
         }
         public void OnPointerDown(PointerEventData eventData)
         {
+            if (CanBlockDrag) return;
+
             if (!_canInteract || _isDragging || IsSnap) return;
 
             BeginDrag(eventData);
@@ -181,6 +186,8 @@ namespace sonnv
 
         public void OnDrag(PointerEventData eventData)
         {
+            if (CanBlockDrag) return;
+
             if (!_canInteract || !_isDragging || IsSnap) return;
 
             UpdateMousePos(eventData);
@@ -190,6 +197,8 @@ namespace sonnv
 
         public void OnPointerUp(PointerEventData eventData)
         {
+            if (CanBlockDrag) return;
+
             if (!_isDragging || IsSnap) return;
 
             _isDragging = false;
@@ -209,6 +218,8 @@ namespace sonnv
         }
         private void BeginDrag(PointerEventData eventData)
         {
+            if (CanBlockDrag) return;
+
             if (isCheckCheckFail)
                 StartFailTimer();
             _isDragging = true;
@@ -253,6 +264,8 @@ namespace sonnv
 
         private void UpdateMousePos(PointerEventData eventData)
         {
+            if (CanBlockDrag) return;
+
             Vector3 worldPos = _mainCam.ScreenToWorldPoint(eventData.position);
             worldPos += offset;
             worldPos.z = offset.z;
@@ -485,7 +498,11 @@ namespace sonnv
         protected virtual void OnStartDrag() { }
         protected virtual void OnDrop() { }
 
-
+        public void SetStateBlockObj()
+        {
+            col.enabled = true;
+            CanBlockDrag = false;
+        }
         [Button]
         public void GetReferences()
         {

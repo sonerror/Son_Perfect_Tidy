@@ -38,4 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_GAME/Playable/SonLevel/LevelTidyPLY122/Level122.unity
     guid: 2eb6728addf79004d922c6161eedf91e
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/_GAME/Playable/SonLevel/LevelTidyPLY189/Level189.unity
+    guid: 969bf63666549a54a8281f83759db01a
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 217f4642bfc612b449dae31520111c63, type: 2}

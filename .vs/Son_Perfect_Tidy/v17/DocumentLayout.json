@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\_game\\levels\\levelshirm\\scripts\\levelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\assets\\_game\\levels\\levelshirm\\scripts\\levelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\levels\\levelshirm\\scripts\\levelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\assets\\_game\\playable\\sonlevel\\leveltidyply189\\paint2d\\revealpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\playable\\sonlevel\\leveltidyply189\\paint2d\\revealpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\assets\\_game\\playable\\sonlevel\\leveltidyply189\\paint2d\\revealimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\playable\\sonlevel\\leveltidyply189\\paint2d\\revealimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\_game\\playable\\sonlevel\\leveltidyply122\\sonboxshootingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\playable\\sonlevel\\leveltidyply122\\sonboxshootingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\scripts\\manager\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\scripts\\ui\\gameplayscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gameplayscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\scripts\\manager\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\scripts\\manager\\sondragsnap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\sondragsnap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\assets\\_game\\playable\\sonlevel\\leveltidyply189\\paint2d\\revealshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\playable\\sonlevel\\leveltidyply189\\paint2d\\revealshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\assets\\_game\\core\\scripts\\sonnv\\sonsnapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\core\\scripts\\sonnv\\sonsnapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|e:\\abi\\project\\playabale\\son_perfect_tidy\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\assets\\_game\\core\\scripts\\sonnv\\paint\\sondragpaintcaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA85F07-58B2-01BF-92EC-33D248C39839}|Assembly-CSharp.csproj|solutionrelative:assets\\_game\\core\\scripts\\sonnv\\paint\\sondragpaintcaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +58,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\SoundManager.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\SoundManager.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAiwKoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T07:41:49.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SonBoxShootIngredients.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY122\\SonBoxShootIngredients.cs",
+              "RelativeDocumentMoniker": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY122\\SonBoxShootIngredients.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY122\\SonBoxShootIngredients.cs",
+              "RelativeToolTip": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY122\\SonBoxShootIngredients.cs",
+              "ViewState": "AQIAAHQBAAAAAAAAAAAcwJwBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T01:48:03.239Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +94,126 @@
               "RelativeDocumentMoniker": "Assets\\_GAME\\Levels\\LevelShirm\\Scripts\\LevelControl.cs",
               "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Levels\\LevelShirm\\Scripts\\LevelControl.cs",
               "RelativeToolTip": "Assets\\_GAME\\Levels\\LevelShirm\\Scripts\\LevelControl.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAwwJ4AAAABAAAA",
+              "ViewState": "AQIAANUAAAAAAAAAAAAqwOYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-15T09:26:54.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TutorialManager.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\TutorialManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\TutorialManager.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\TutorialManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\TutorialManager.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAgwJsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T09:13:53.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GamePlayScreen.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\UI\\GamePlayScreen.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GamePlayScreen.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\UI\\GamePlayScreen.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\GamePlayScreen.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIAwwBsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T01:41:06.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T09:06:19.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SonDragSnap.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\SonDragSnap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\SonDragSnap.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\Scripts\\Manager\\SonDragSnap.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\SonDragSnap.cs",
+              "ViewState": "AQIAAOoBAAAAAAAAAAAnwPcBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T08:23:38.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RevealShader.shader",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealShader.shader",
+              "RelativeDocumentMoniker": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealShader.shader",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealShader.shader",
+              "RelativeToolTip": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealShader.shader",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-05-27T06:49:23.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RevealImage.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealImage.cs",
+              "RelativeDocumentMoniker": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealImage.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealImage.cs",
+              "RelativeToolTip": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealImage.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T06:36:14.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RevealPen.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealPen.cs",
+              "RelativeDocumentMoniker": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealPen.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealPen.cs",
+              "RelativeToolTip": "Assets\\_GAME\\Playable\\SonLevel\\LevelTidyPLY189\\Paint2d\\RevealPen.cs",
+              "ViewState": "AQIAAFkCAAAAAAAAAAAuwHkCAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T06:34:56.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SonDragPaintCaller.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Core\\Scripts\\SonNv\\Paint\\SonDragPaintCaller.cs",
+              "RelativeDocumentMoniker": "Assets\\_GAME\\Core\\Scripts\\SonNv\\Paint\\SonDragPaintCaller.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Core\\Scripts\\SonNv\\Paint\\SonDragPaintCaller.cs",
+              "RelativeToolTip": "Assets\\_GAME\\Core\\Scripts\\SonNv\\Paint\\SonDragPaintCaller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T04:39:32.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SonSnapObject.cs",
+              "DocumentMoniker": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Core\\Scripts\\SonNv\\SonSnapObject.cs",
+              "RelativeDocumentMoniker": "Assets\\_GAME\\Core\\Scripts\\SonNv\\SonSnapObject.cs",
+              "ToolTip": "E:\\ABI\\Project\\Playabale\\Son_Perfect_Tidy\\Assets\\_GAME\\Core\\Scripts\\SonNv\\SonSnapObject.cs",
+              "RelativeToolTip": "Assets\\_GAME\\Core\\Scripts\\SonNv\\SonSnapObject.cs",
+              "ViewState": "AQIAAC8BAAAAAAAAAAAwwFgBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T04:22:12.693Z",
               "EditorCaption": ""
             }
           ]

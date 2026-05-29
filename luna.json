@@ -2,7 +2,7 @@
     "version": "7.1.0",
     "projectId": "f42e7ff96e4545544bb6cd68f51ab634",
     "applicationID": 26861,
-    "creativeName": "Son_R1_PerfectTidy_PLY122_GG",
+    "creativeName": "Son_R1_PerfectTidy_PLY189_NoSort",
     "pgServer": "EU",
     "window": {
         "‐⁙": true
@@ -133,7 +133,7 @@
             ]
         },
         "scenes": [
-            "Assets/_GAME/Playable/SonLevel/LevelTidyPLY122/Level122.unity"
+            "Assets/_GAME/Playable/SonLevel/LevelTidyPLY189/Level189.unity"
         ],
         "disabledScenes": [
             "Assets/Scenes/GamePlayScene.unity",
@@ -142,7 +142,8 @@
             "Assets/_GAME/Levels/LevelShirm/LevelShirm.unity",
             "Assets/_GAME/Levels/LevelSkewers/LevelSkewers.unity",
             "Assets/_GAME/Levels/Levelvalen/SonLevel167.unity",
-            "Assets/_GAME/Levels/SonLevelDonut/Level628.unity"
+            "Assets/_GAME/Levels/SonLevelDonut/Level628.unity",
+            "Assets/_GAME/Playable/SonLevel/LevelTidyPLY122/Level122.unity"
         ],
         "startupScene": 0,
         "packages": {
@@ -3127,10 +3128,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Experimental.Rendering.GraphicsFormatUtility",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.FrustumPlanes",
                 "excluded": true
             },
@@ -3220,10 +3217,6 @@
             },
             {
                 "name": "UnityEngine.LineRenderer.Parameters",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.MipmapLimitDescriptor",
                 "excluded": true
             },
             {
@@ -3360,10 +3353,6 @@
             },
             {
                 "name": "UnityEngine.StaticBatchingUtility",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.SystemInfo",
                 "excluded": true
             },
             {
@@ -9781,6 +9770,14 @@
             {
                 "name": "sonnv.IngredientList",
                 "excluded": false
+            },
+            {
+                "name": "sonnv.SonDragPaintCaller",
+                "excluded": true
+            },
+            {
+                "name": "sonnv.SonSpriteErasePainter2D",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -17890,7 +17887,7 @@
                     },
                     {
                         "name": "filterMode#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "wrapMode#get",
@@ -17898,7 +17895,7 @@
                     },
                     {
                         "name": "wrapMode#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "wrapModeU#get",
@@ -17950,7 +17947,7 @@
                     },
                     {
                         "name": "ValidateFormat$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ValidateFormat",
@@ -19114,7 +19111,7 @@
                     },
                     {
                         "name": "material#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sharedMaterial#set",
@@ -19146,11 +19143,11 @@
                     },
                     {
                         "name": "materials#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "bounds#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerID#set",
@@ -19374,7 +19371,7 @@
                     },
                     {
                         "name": "$ctor18",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor14",
@@ -19402,7 +19399,7 @@
                     },
                     {
                         "name": "$ctor11",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -19462,7 +19459,7 @@
                     },
                     {
                         "name": "SetPixels32$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetPixels32$2",
@@ -19470,7 +19467,7 @@
                     },
                     {
                         "name": "Apply$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Apply",
@@ -19502,7 +19499,7 @@
                     },
                     {
                         "name": "ValidateFormat$4",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ValidateFormat$3",
@@ -22199,7 +22196,7 @@
                         "excluded": false
                     },
                     {
-                        "name": "showEndGame",
+                        "name": "ShowEndGame",
                         "excluded": false
                     }
                 ]
@@ -24012,7 +24009,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CopyPropertiesFromMaterial",
@@ -24084,7 +24081,7 @@
                     },
                     {
                         "name": "SetTexture$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTexture",
@@ -28640,7 +28637,7 @@
                     },
                     {
                         "name": "DOOrthoSize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOPixelRect",
@@ -30067,19 +30064,15 @@
                         "excluded": true
                     },
                     {
-                        "name": "Tutorial",
-                        "excluded": true
-                    },
-                    {
                         "name": "SetNewTime",
                         "excluded": false
                     },
                     {
-                        "name": "ShowHintPosToPos",
+                        "name": "ListTfTrash#get",
                         "excluded": false
                     },
                     {
-                        "name": "TutorialStep1",
+                        "name": "TutorialSort",
                         "excluded": false
                     }
                 ]
@@ -40733,6 +40726,18 @@
                     {
                         "name": "DelayMoveBack",
                         "excluded": true
+                    },
+                    {
+                        "name": "IE_DelayHideObj",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetScaleTF",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetReferences",
+                        "excluded": true
                     }
                 ]
             },
@@ -42212,6 +42217,38 @@
                     },
                     {
                         "name": "CheckDoneStep1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "MoveCamera",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnSnapHandler$1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStartStep2",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IE_DelayStep2",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStartStep3",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStartStep4",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IE_DelayStep4",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetSnapObjectPhase5",
                         "excluded": false
                     }
                 ]
@@ -47843,6 +47880,10 @@
                     {
                         "name": "FindSnapPointWithSameName",
                         "excluded": true
+                    },
+                    {
+                        "name": "SetStateBlockObj",
+                        "excluded": false
                     }
                 ]
             },
@@ -47910,7 +47951,7 @@
                     },
                     {
                         "name": "OnWin",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MoveAndScaleRoutine",
@@ -47927,6 +47968,42 @@
                     {
                         "name": "OnPointerUp",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnAutoShoot",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RequestWinAfterDelay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IE_WinAfterDelay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IE_FallbackCompleteShootedItem",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CompleteShootedItem",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ForceCompleteAllShootedItems",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ReSetBlockObj",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IE_AutoWinAfterAllMoveDone",
+                        "excluded": false
                     }
                 ]
             },
@@ -47936,6 +48013,612 @@
                 "instanceMethods": [
                     {
                         "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Experimental.Rendering.GraphicsFormatUtility",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetGraphicsFormat$2",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetGraphicsFormat$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetGraphicsFormat",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.MipmapLimitDescriptor",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "getDefaultValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getHashCode",
+                        "excluded": true
+                    },
+                    {
+                        "name": "equals",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$clone",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.SystemInfo",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "batteryLevel#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "batteryStatus#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "operatingSystem#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "operatingSystemFamily#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "processorType#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "processorFrequency#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "processorCount#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "systemMemorySize#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "deviceUniqueIdentifier#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "deviceName#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "deviceModel#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsAccelerometer#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsGyroscope#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsLocationService#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsVibration#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsAudio#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "deviceType#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsMemorySize#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsDeviceName#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsDeviceVendor#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsDeviceID#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsDeviceVendorID#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsDeviceType#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsUVStartsAtTop#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsDeviceVersion#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsShaderLevel#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsMultiThreaded#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "renderingThreadingMode#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasHiddenSurfaceRemovalOnGPU#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasDynamicUniformArrayIndexingInFragmentShaders#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsShadows#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsRawShadowDepthSampling#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsMotionVectors#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supports3DTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supports2DArrayTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supports3DRenderTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsCubemapArrayTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "copyTextureSupport#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsComputeShaders#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsGeometryShaders#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsTessellationShaders#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsInstancing#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsHardwareQuadTopology#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supports32bitsIndexBuffer#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsSparseTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportedRenderTargetCount#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsSeparatedRenderTargetsBlend#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportedRandomWriteTargetCount#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsMultisampledTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsMultisampleAutoResolve#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsTextureWrapMirrorOnce#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "usesReversedZBuffer#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "npotSupport#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxTextureSize#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxCubemapSize#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeBufferInputsVertex#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeBufferInputsFragment#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeBufferInputsGeometry#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeBufferInputsDomain#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeBufferInputsHull#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeBufferInputsCompute#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeWorkGroupSize#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeWorkGroupSizeX#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeWorkGroupSizeY#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxComputeWorkGroupSizeZ#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsAsyncCompute#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsGraphicsFence#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsAsyncGPUReadback#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsRayTracing#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsSetConstantBuffer#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "minConstantBufferOffsetAlignment#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasMipMaxLevel#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsMipStreaming#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "usesLoadStoreActions#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsRenderTextures#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsRenderToCubemap#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsImageEffects#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsStencil#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "graphicsPixelFillrate#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsVertexPrograms#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "supportsGPUFence#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SupportsRenderTextureFormat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SupportsBlendingOnRenderTextureFormat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SupportsRandomWriteOnRenderTextureFormat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SupportsTextureFormat",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SupportsVertexAttributeFormat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFormatSupported",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFormatSupported$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetCompatibleFormat",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetCompatibleFormat$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetGraphicsFormat",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "sonnv.RevealImage",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "IsComplete#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsEraseMode#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EnablePaint",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DisablePaint",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetPaintEnabled",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Paint",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckCompletion",
+                        "excluded": false
+                    },
+                    {
+                        "name": "BuildBrush",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetBrushSize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetCanPaint",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "sonnv.RevealPen",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "IsDragging#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnStartDragEvent#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDropEvent#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnMouseUpEvent#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnMovebackDone#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PenTipPosition#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerDown",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerUp",
+                        "excluded": false
+                    },
+                    {
+                        "name": "MoveBackAfterDrop",
+                        "excluded": false
+                    },
+                    {
+                        "name": "MoveBack",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetCanInteract",
+                        "excluded": true
+                    },
+                    {
+                        "name": "UpdateMousePos",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TryPaintByInterval",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DoPaint",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnAwake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStart",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStartDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDrop",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetCurrentStep",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartWrongStepCheck",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CancelWrongStepCheck",
                         "excluded": false
                     }
                 ]

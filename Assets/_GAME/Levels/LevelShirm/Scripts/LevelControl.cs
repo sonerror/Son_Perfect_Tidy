@@ -10,6 +10,8 @@ using UnityEngine.Events;
 public class LevelControl : LevelBase
 {
     [SerializeField] private Camera cam;
+    [SerializeField] private TutorialManager tutManager;
+
     protected override void Awake()
     {
         base.Awake();
@@ -66,6 +68,26 @@ public class LevelControl : LevelBase
         isDoneStep = true;
         EventManager.TriggerEvent(EventType.IncreaseProgress.ToString());
     }
+    private void MoveCamera(
+               Camera _cam,
+               float targetOrthoSize,
+               float targetLocalY,
+               float duration,
+               System.Action onComplete = null)
+    {
+        if (_cam == null) return;
+        Sequence seq = DOTween.Sequence();
+        if (targetOrthoSize < 3.55f)
+        {
+            targetOrthoSize = 3.55f;
+        }
+        seq.Append(_cam.DOOrthoSize(targetOrthoSize, duration));
+        seq.Join(_cam.transform.DOLocalMoveY(targetLocalY, duration));
+        if (onComplete != null)
+        {
+            seq.OnComplete(() => onComplete?.Invoke());
+        }
+    }
     protected virtual void TryNextStep()
     {
         currentStep++;
@@ -81,7 +103,15 @@ public class LevelControl : LevelBase
             case 0:
                 tutManager.SetNewTime(0.5f);
                 OnStartStep1();
-                Debug.Log("Luna Debug: Entered Step 0 logic");
+                break;
+            case 1:
+                OnStartStep2();
+                break;
+            case 2:
+                OnStartStep3();
+                break;
+            case 3:
+                OnStartStep4();
                 break;
         }
     }
@@ -100,21 +130,141 @@ public class LevelControl : LevelBase
         emoji.transform.position = position + Vector3.up * 0.5f + Vector3.left * 0.5f;
         emoji.ShowPositive();
     }
+    [SerializeField] private List<SonSnapPoint> listSnapPointBin;
+    [SerializeField] private List<SonSnapObject> listSnapObjectBin;
+
+
+    [SerializeField] private int countSnapWin = 5;
+    private int countSnap = 0;
+
+    private void OnStartStep1()
+    {
+        countSnapWin = listSnapObjectBin.Count;
+        tutManager.enableCountTime = true;
+        SetSnapObject();
+    }
+    private void SetSnapObject()
+    {
+        foreach (SonSnapPoint point in listSnapPointBin)
+        {
+            point.ChangeCanSnap(true);
+        }
+        foreach (SonSnapObject obj in listSnapObjectBin)
+        {
+            SonSnapObject cache = obj;
+
+            cache.OnSnap.AddListener(() => OnSnapHandler(cache));
+        }
+    }
+    private void OnSnapHandler(SonSnapObject obj)
+    {
+        if (obj == null) return;
+        Debug.Log("Snap");
+
+        obj.OnSnap.RemoveAllListeners();
+
+        if (listSnapObjectBin.Contains(obj))
+        {
+            int removedIndex = listSnapObjectBin.IndexOf(obj);
+            if (removedIndex < 0) return;
+            tutManager.ListTfTrash.RemoveAt(removedIndex);
+            listSnapObjectBin.Remove(obj);
+        }
+        countSnap++;
+        if (countSnap == 1)
+        {
+            tutManager.SetNewTime(5f);
+        }
+        if (countSnap >= countSnapWin || listSnapObjectBin.Count == 0)
+        {
+            DoneStep();
+            TryNextStep();
+            tutManager.enableCountTime = false;
+        }
+    }
+
+    //step2
+    [SerializeField] private ShowObjectEffect showStep1;
+    [SerializeField] private ShowObjectEffect showStep2;
+
+    [SerializeField] private RevealImage imgStep1;
+    [SerializeField] private float targetOrthoSize = 12.75f;
+    [SerializeField] private float targetLocalY = -3f;
+
+
+    private void OnStartStep2()
+    {
+        StartCoroutine(IE_DelayStep2());
+    }
+    IEnumerator IE_DelayStep2()
+    {
+        yield return new WaitForSeconds(0.5f);
+        MoveCamera(cam, cam.orthographicSize + targetOrthoSize, cam.transform.position.y, 0.75f, () =>
+        {
+            showStep1.Hide();
+            showStep2.Show(0.75f);
+            showStep2.onShowComplete.AddListener(() =>
+            {
+                imgStep1.SetCanPaint(true);
+                imgStep1.OnComplete.AddListener(() =>
+                {
+                    DoneStep();
+                    TryNextStep();
+                });
+            });
+        });
+
+    }
+    //step 3
+    [SerializeField] private RevealImage imgStep2;
+    [SerializeField] private RevealPen dragTowl;
+    private void OnStartStep3()
+    {
+        dragTowl.SetCurrentStep(currentStep);
+        imgStep2.SetCanPaint(true);
+        imgStep2.OnComplete.AddListener(() =>
+        {
+            DoneStep();
+            TryNextStep();
+            tutManager.enableCountTime = false;
+        });
+    }
+
+
+    [SerializeField] private ShowObjectEffect showStep1Stage2;
+    [SerializeField] private float targetLocalYStep2 = -3f;
+    private void OnStartStep4()
+    {
+        StartCoroutine(IE_DelayStep4());
+    }
+    IEnumerator IE_DelayStep4()
+    {
+        yield return new WaitForSeconds(0.5f);
+        showStep2.Hide();
+        MoveCamera(cam, cam.orthographicSize, cam.transform.position.y - targetLocalYStep2, 0.75f, () =>
+        {
+            showStep1Stage2.Show(0.75f);
+            showStep1Stage2.onShowComplete.AddListener(() =>
+            {
+                shootIngredients.onDoneShootAuto.AddListener(() =>
+                {
+                    SetSnapObjectPhase5();
+                    CheckDoneStep1();
+                });
+                shootIngredients.OnAutoShoot();
+
+            });
+        });
+
+    }
 
 
     [SerializeField] private SonBoxShootIngredients shootIngredients;
     [SerializeField] private List<SonDragSnap> listSnapObjectRollDone;
     public List<SonDragSnap> ListSnapObjectRollDone => listSnapObjectRollDone;
-    [SerializeField] private int countSnapWin = 5;
-    [SerializeField] private TutorialManager tutManager;
-    private int countSnap = 0;
-
-    private void OnStartStep1()
-    {
-        tutManager.enableCountTime = true;
-        SetSnapObject();
-    }
-    private void SetSnapObject()
+    [SerializeField] private int countSnapWinPhase2 = 5;
+    private int countSnapPhase2 = 0;
+    private void SetSnapObjectPhase5()
     {
         foreach (SonDragSnap obj in listSnapObjectRollDone)
         {
@@ -128,32 +278,28 @@ public class LevelControl : LevelBase
     {
         if (obj == null) return;
         Debug.Log("Snap");
-
         if (vfxPrefab != null)
         {
             VFXStart vfx = Instantiate(vfxPrefab, obj.SnapToPosition.transform.position, Quaternion.identity);
             vfx.gameObject.SetActive(true);
         }
-
         obj.OnSnap.RemoveAllListeners();
-
         if (listSnapObjectRollDone.Contains(obj))
         {
             listSnapObjectRollDone.Remove(obj);
         }
-
-        countSnap++;
-
+        countSnapPhase2++;
+        if(countSnapPhase2 == 1)
+        {
+            tutManager.SetNewTime(5f);
+        }
         if (shootIngredients != null)
             shootIngredients.DecreaseObject();
-
-        if (countSnap >= countSnapWin || listSnapObjectRollDone.Count == 0)
-        {
-            CheckDoneStep1();
-        }
+       
     }
+
     private void CheckDoneStep1()
     {
-        GameManager.Ins.showEndGame();
+        GameManager.Ins.ShowEndGame();
     }
 }
